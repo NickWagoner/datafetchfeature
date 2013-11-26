@@ -1,21 +1,122 @@
 <html>
+
 	<div class="container">
-		<h1>Fetch Data</h1>
-		<body>
+		<div class="page-header">
+  		<h1>
+  			Fetch Data
+  		</h1>
+		</div>
+
+  		<%# Begin Panel 1: Select Filters %>
 			<div class="panel panel-default">
- 				 <div class="panel-heading">
-    				<h3 class="panel-title">Panel title</h3>
-  				</div>
-  				<div class="panel-body">
-    				<select class="form-control">
-						  <option>1</option>
-						  <option>2</option>
-						  <option>3</option>
-						  <option>4</option>
-						  <option>5</option>
-						</select>
-  				</div>
+
+				<div class="panel-heading">
+    				<h2 class="panel-title">
+    					Step 1: Select the data that you would like to fetch from PACER.
+    				</h2>
+				</div>
+
+				<div class="panel-body">
+
+    			<h4>U.S. District Court</h4>
+    			<select class="form-control">
+					  <option>
+					  	Populate with names of each U.S. district court
+					  </option>
+					</select>
+
+				</br>
+
+				<h4>Nature of Suit</h4>
+    			<select class="form-control">
+					  <option>
+					  	Populate with each nature-of-suit category
+					  </option>
+					</select>
+
+				</br>
+
+				<h4>Date Restrictions</h4>
+	  		<p>
+	  			insert date picker here
+	  		</p>
+
+				</br>
+
+  			</div>
 			</div>
-		</body>
-	</div>
+			<%# End Panel 1: Select Filters %>
+
+			<%# Begin Panel 2: Upgrade to a Professional Plan %>
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+    			<h2 class="panel-title">
+    				Step 2: Upgrade to a Professional Plan
+    			</h2>
+				</div>
+
+				<div class="panel-body">
+					<h6>
+						Insert Stripe form fields here.
+					</h6>
+
+					<div class="centered">
+						<button type="button" class="btn btn-danger btn-md">
+							Upgrade
+						</button>
+					</div>
+				</div>
+
+			</div>
+			<%# End Panel 2: Upgrade to a Professional Plan %>
+
+			<%# Begin Panel 3: Calculate Fetching Fee %>
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+    				<h2 class="panel-title">
+    					Step 3: Calculate Fetching Fee
+    				</h2>
+				</div>
+
+				<div class="panel-body">
+
+					<h6>
+							To calculate the cost of fetching the data that you have selected from PACER, click the button below:
+					</h6>
+
+					<div class="well well-sm">
+						$67.20
+					</div>
+
+					<div class="centered">
+						<p>
+							<button type="button" class="btn btn-danger btn-md">
+							Calculate
+							</button>
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<%# End Panel 3: Calculate Fetching Fee %>
+
+		</br>
+
+	<button type="button" class="btn btn-danger btn-lg btn-block">
+		Purchase Data
+	</button>
+
+			</div>
+
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+
+	</form>
+
 </html>
